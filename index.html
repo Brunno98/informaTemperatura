@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wheather Info</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-light text-dark bg-gradient">
+    <div class="container">
+      <div class="row text-center my-4">
+          <h1 class="display-1">Free CodeCamp</h1>
+          <h2 class="display-2">Weather app</h2>
+      </div>
+      
+      <div class="row">
+        <div class="col-4 mx-auto">
+          <div class="card text-center bg-dark text-white bg-gradient shadow">
+            <div class="card-header ">
+              <h5 class="card-title"><span id="city" class=""></span></h5>
+              <h6 class="card-title"><span id="date"></span></h6>
+            </div>
+            <div class="card-body my-2">
+              <div class="row fw-bold fs-1">
+                <div class="col">
+                  <span id="temp"></span><span id="scale"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span id="desc" class="fst-italic"></span>
+            </div>
+          </div>
+          <p class="fw-light text-end pt-1">Switch scale to: <button type="button" class="btn btn-secondary btn-sm" id="btnScale">Fahrenheit</button></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Js com a logica para buscar informação sobre o tempo -->
+    <!-- Js with logic which query information about the wather-->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
